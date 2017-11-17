@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    	<meta name="description" content="">
+    	<link rel="stylesheet" type="text/css" href="__HOMECSS__/public.css"/>
+    	<link rel="stylesheet" type="text/css" href="__HOMECSS__/sxy-public.css"/>
+    	<script src="__HOMEJS__/qrcode.min.js"></script>
+		<style type="text/css">
+			.con-top{padding-top: 50px;}
+			table,.con-top,.content{width: 943px;padding: 10px;margin: 0 auto;}
+			table{margin-bottom: 150px;}
+			table tr{border-bottom: 1px solid #d7d7d7;}
+			table tr:nth-last-child(1){border-bottom: none;}
+			/*table tr td{width: 167px;}*/
+			table tr td .gs-icon{width: 74px;height: 74px;}
+			table tr td .gs-icon img{width: 100%;}
+			.sxy-btn,.sxy-btn-blank{display: inline-block;text-align: center;background-color: #53cac3;width: 166px;height: 40px;line-height: 40px;color: #fff!important;}
+			.sxy-btn-blank{background-color: #fff;color: #50c8c1 !important;border: 1px solid #50c8c1;margin-left: 20px;}
+			.content .sxypay-btn{width: 450px;text-align: center;line-height: 40px;border: 1px solid #d7d7d7;border-radius: 5px;}
+		</style>
+		<title>有限公司注册付款</title>
+	</head>
+	<body>
+		<script src="__HOMEJS__/sxy-head.js" type="text/javascript" charset="utf-8"></script>
+		<div class="con-top">
+			<h4>有限公司注册</h4>
+			<h4>
+				<img src="__HOMEIMAGE__/step1-sxy.png"/>
+				<img src="__HOMEIMAGE__/step2-sxy.png"/>
+				<img src="__HOMEIMAGE__/step3-sxy.png"/>
+			</h4>
+			<h4><span>已成功选择{$info.kefu}为您服务，请完成支付！</span><a href="#" class="fr">收起订单详情</a></h4>
+			<h5>服务费用：<span>{$info.price}元</span>账户余额：<span>0元</span><span>合计应付：<em id="paynum">{$info.price}元</em></span></h5>
+		</div>
+		<div class="content">
+			<hr />
+			<br />
+			<h5 class="fourb" id='num'>订单编号：<span>{$info.order_num}</span></h5>
+			<h5 class="fourb" id='desc'>产品名称：<span>{$info.product}</span></h5>
+			<h5 class="fourb">注册区域：<span>{$info.area}</span></h5>
+			<h5 class="fourb">联系电话：<span>{$info.mobile}</span></h5>
+			<h5 class="fourb" id='price'>产品价格：<span class="f867">{$info.price}元</span></h5>
+			<br />
+			<hr />
+			<h4>选择支付方式：</h4><br/>
+			<div id="qrcode1">
+				<a href='javascript:void(0);' id='zhifubao' class="fl sxypay-btn">支付宝</a>
+			</div>
+
+			<div id="qrcode">	
+				<a href='javascript:void(0);' id='weixin' class=' fr sxypay-btn' >微信</a>
+			</div>
+			
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<div class="gs-icon">
+							<img src="__HOMEIMAGE__/gs-icon.png"/>
+						</div>	
+					</td>
+					<td>
+						<h4>{$info.kefu}</h4>
+						<p>完成单数：<span class="f867">{$info.finishlist}</span>   好评率：<span class="f867">{$info.pingjia}%</span></p>
+						<p>公司名称：{$info.servicename}</p>
+						<p>服务承诺：{$info.serviceaccept}</p><br>
+						<p></p>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><a href="#" class="sxy-btn">免费电话:{$info.telephone}</a><a href="#" class="sxy-btn-blank">投诉</a></td>
+				</tr>
+			</table>
+		</div>
+		<script src="__HOMEJS__/sxy-bottom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__HOMEJS__/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="__HOMEJS__/qrcode.js"></script>
+        <script type="text/javascript" src="__HOMEJS__/made-code.js"></script>
+	</body>
+
+</html>
+<script type="text/javascript">
+	$("#weixin").click(function(){
+		
+		var price = $("#price span").text();
+		var desc = $("#desc span").text();
+		var order_num = $("#num span").text();
+
+		$.ajax({
+			url : '/index.php/Web/CreateUrl/createQrcode',
+			data : {price:price,desc:desc,order_num:order_num},
+	        type : 'GET',
+	        async : false,
+	        dataType : 'json',
+	        success : function(infos){
+	        	//////////alert(infos.code)
+	        	if(infos.code == 200){
+	        		if(infos.unifiedOrderResult.code_url != null){
+            			var url = infos.code_url;
+            		}
+            			var options = {text: url};
+            			$("#qrcode").qrcode(options);
+	        	}
+	        }
+		});
+	});
+
+	
+</script>
