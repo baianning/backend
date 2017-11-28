@@ -33,17 +33,18 @@ class LoginController extends Controller
     //登录操作
     public function Login()
     {  // 判断提交方式
-        if(!IS_POST) echo renderJson("","参数错误",3);
+//        if(!IS_POST) echo renderJson("","参数错误",3);
         $phone = I("post.phone");
         $Vcode = I("post.Vcode");
 
-/*        $phone = '13522807353';
-        $Vcode = '1683';*/
+/*        $phone = '17611159587';
+        $Vcode = '9999';*/
         $result = validate_phone($phone);
         if( !$result ) echo renderJson("","手机号格式有误",3);
-        $resvcode = M("vcode")->where("vcode=".$Vcode)->find();
+        $resvcode = M("vcode")->where("vcode=".$Vcode." and phone=".$phone)->find();
         if( !$resvcode ) echo renderJson("","验证码有误",1);//判断验证码是否正确
         if( ( time() - $resvcode['ctime'] ) >3000000 ) echo renderJson("","验证码已过期",3);//判断验证码是否正确
+//        echo 123;die;
 
         $user = M("user");
         $res = $user->where("phone='".$phone."'")->find();
@@ -92,7 +93,7 @@ class LoginController extends Controller
         $user = M('user');
         $uid = session("uid");
         addLogs(session());
-        if( !$uid ) echo renderJson("","请先登录",1);
+        if( !$uid ) echo renderJson("","请先登录",2);
         $nickname = I("post.nickname");
         $head_pic = I("post.head_pic");
         $data = [
@@ -169,7 +170,7 @@ class LoginController extends Controller
             echo renderJson("","",0);
         }
         $uid = session("uid");
-        if( !$uid ) echo renderJson("","请先登录",1);
+        if( !$uid ) echo renderJson("","请先登录",2);
         if( $sign ) $data['sign'] = $sign;
         if( $nickname ) $data['nickname'] = $nickname;
         if( $head_pic ) $data['head_pic'] = $head_pic;

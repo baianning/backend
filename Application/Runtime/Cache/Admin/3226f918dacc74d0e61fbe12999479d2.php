@@ -33,17 +33,25 @@
     </div>
     <div class="x-body">
       <div class="layui-row">
-        <form class="layui-form layui-col-md12 x-so">
-          <input class="layui-input" placeholder="开始日" name="start" id="start">
-          <input class="layui-input" placeholder="截止日" name="end" id="end">
-          <input type="text" name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">
-          <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+        <form class="layui-form layui-col-md12 x-so" action="admin_list" method="post">
+
+          <input class="layui-input" placeholder="开始日" name="start" id="start" value="<?php echo ($param['start'] ? $param['start'] : ''); ?>">
+          <input class="layui-input" placeholder="截止日" name="end" id="end"  value="<?php echo ($param['end'] ? $param['end'] : ''); ?>" >
+          <input type="text" name="username"  placeholder="请输入登录名" autocomplete="off" class="layui-input" value="<?php echo ($param['username']); ?>">
+          <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" value="查询">
+          <select class="layui-select" name="grade" lay-search>
+            <option value="">全部</option>
+            <option value="1" <?php if($param['grade'] == 1 ): ?>selected<?php endif; ?> >管理员</option>
+            <option value="2" <?php if($param['grade'] == 2 ): ?>selected<?php endif; ?> >编辑人员</option>
+          </select>
+          <!--<button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>-->
+
         </form>
       </div>
       <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
         <button class="layui-btn" onclick="x_admin_show('添加用户','admin_add')"><i class="layui-icon"></i>添加</button>
-        <span class="x-right" style="line-height:40px">共有数据：88 条</span>
+        <span class="x-right" style="line-height:40px">共有数据：<?php echo ($pageary['total']); ?> 条</span>
       </xblock>
       <table class="layui-table">
         <thead>
@@ -65,7 +73,7 @@
 
         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
             <td>
-              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<?php echo ($vo["id"]); ?>'><i class="layui-icon">&#xe605;</i></div>
             </td>
             <td><?php echo ($vo["id"]); ?></td>
             <td><?php echo ($vo["username"]); ?></td>
@@ -80,10 +88,10 @@
               <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
                 <i class="layui-icon">&#xe601;</i>
               </a>
-              <a title="编辑"  onclick="x_admin_show('编辑','admin/admin_edit')" href="javascript:;">
+              <a title="编辑"  onclick="x_admin_show('编辑','admin_edit')" href="javascript:;">
                 <i class="layui-icon">&#xe642;</i>
               </a>
-              <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+              <a title="删除" onclick="member_del(this,<?php echo ($vo["id"]); ?>)" href="javascript:;">
                 <i class="layui-icon">&#xe640;</i>
               </a>
             </td>
@@ -92,14 +100,7 @@
         </tbody>
       </table>
       <div class="page">
-        <div>
-          <a class="prev" href="">&lt;&lt;</a>
-          <a class="num" href="">1</a>
-          <span class="current">2</span>
-          <a class="num" href="">3</a>
-          <a class="num" href="">489</a>
-          <a class="next" href="">&gt;&gt;</a>
-        </div>
+        <?php echo ($pageary['html']); ?>
       </div>
 
     </div>
@@ -145,9 +146,21 @@
       /*用户-删除*/
       function member_del(obj,id){
           layer.confirm('确认要删除吗？',function(index){
-              //发异步删除数据
-              $(obj).parents("tr").remove();
-              layer.msg('已删除!',{icon:1,time:1000});
+              $.ajax({
+                  type: 'post',
+                  url: "<?php echo U('Admin/admin_del');?>",
+                  data:{"ids":id},
+                  success: function(data) {
+                      data = eval("("+data+")");
+                      if(data.errno==0){
+                          //发异步删除数据
+                          $(obj).parents("tr").remove();
+                          layer.msg('已删除!',{icon:1,time:1000});
+                      }else{
+                          layer.msg('删除失败', {icon: 1});
+                      }
+                  }
+              });
           });
       }
 
@@ -155,13 +168,27 @@
 
       function delAll (argument) {
 
-        var data = tableCheck.getData();
-  
-        layer.confirm('确认要删除吗？'+data,function(index){
-            //捉到所有被选中的，发异步进行删除
-            layer.msg('删除成功', {icon: 1});
-            $(".layui-form-checked").not('.header').parents('tr').remove();
-        });
+          var datas = tableCheck.getData();
+          layer.confirm('确认要删除吗？'+datas,function(index){
+              //捉到所有被选中的，发异步进行删除
+//            return false;
+              $.ajax({
+                  type: 'post',
+                  url: "<?php echo U('Admin/admin_del');?>",
+                  data:{"ids":datas},
+                  success: function(data) {
+                      data = eval("("+data+")");
+                      if(data.errno==0){
+                          layer.msg('删除成功', {icon: 1});
+                          $(".layui-form-checked").not('.header').parents('tr').remove();
+                      }else{
+                          layer.msg('删除失败', {icon: 1});
+                      }
+                  }
+              });
+
+
+          });
       }
     </script>
     <script>var _hmt = _hmt || []; (function() {

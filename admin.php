@@ -21,8 +21,8 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 define('PUBLIUC_PATH','/item/Public/');
-define('BIND_MODULE','Admin'); //绑定Home模块到当前入口文件
-//define('BIND_CONTROLLER','Index'); // 绑定Index控制器到当前入口文件
+define('BIND_MODULE','Admin'); //绑定Admin模块到当前入口文件
+//define('DEFAULT_CONTROLLER','Login'); // 绑定Index控制器到当前入口文件
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

@@ -98,7 +98,7 @@ function get_cate($field='',$sort = 0){
  * page   获取到的页码
  */
 
-function pagination($total = 0, $limit = 10, $page = 1)
+function pagination($total = 0, $limit = 10, $page = 1, $url)
 
 {
     if (!$total) {
@@ -113,9 +113,9 @@ function pagination($total = 0, $limit = 10, $page = 1)
         $totalpage = ceil($total / $limit);
     }
     $pageary = array();
-
     if ($page >= $totalpage) {
-        $currentpage = $totalpage;
+//        $currentpage = $totalpage;
+        $currentpage = $page;
         $next = $totalpage;
         $prev = $totalpage - 1;
     } elseif ($page < 1) {
@@ -127,11 +127,24 @@ function pagination($total = 0, $limit = 10, $page = 1)
         $next = $page + 1;
         $prev = $page - 1;
     }
+    $html = "<div>
+          <a class='prev' href=" . $url . "page=1>&lt;&lt;</a>";
+    if( $currentpage >1 ){
+        $html .= "<a class='num' href=" . $url . "page=" . $prev . ">$prev</a>";
+    }
+    $html .= "<span class='current'>$currentpage</span>";
+    if( $currentpage < $totalpage){
+        $html .= "<a class='num' href=" . $url . "page=" . $next . ">$next</a>
+              <a class='num' href=" . $url . "page=" . $totalpage . ">$totalpage</a>";
+    }
+    $html .= "<a class='next' href=" . $url . "page=" . $totalpage . ">&gt;&gt;</a>
+        </div>";
 
     $offset = ($currentpage - 1) * $limit;
     $pageary['start'] = $offset;
     $pageary['end'] = $offset + $limit;
     $pageary['total'] = $total;
+    $pageary['html'] = $html;
     $pageary['offset'] = $offset;
     return $pageary;
 }

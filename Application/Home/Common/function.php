@@ -134,3 +134,15 @@ function pagination($total = 0, $limit = 10, $page = 1)
     $pageary['offset'] = $offset;
     return $pageary;
 }
+function get_admin($admin_id){
+    if( !$admin_id ) return '';
+    return M("admin")->where("id=".$admin_id)->getField("username");
+}
+/*function dispose_news($arr){
+    if( !is_array($arr) || !$arr ) return $arr;
+    foreach( $arr as $key=>&$val ){
+        $val['content'] = htmlspecialchars_decode($val['content']);
+    }
+    return $arr;
+}*/
+

@@ -1,17 +1,29 @@
 <?php
 return array(
     // 默认操作名称
+    'DEFAULT_MODULE' => 'Admin',
+    //'配置项'=>'配置值'
+    'DEFAULT_CONTROLLER'    =>  'login',
+    // 默认控制器名称
+    'DEFAULT_ACTION'        =>  'login',
 
     'DB_TYPE'   => 'mysql',// 数据库类型
-
+//本地数据库配置
     'DB_HOST'   => 'localhost', // 服务器地址
     'DB_NAME'   => 'item', // 数据库名
     'DB_USER'   => 'root', // 用户名
     'DB_PWD'    => 'root', // 密码
     'DB_PORT'   => 3306, // 端口
+//服务器数据库配置
+/*    'DB_HOST'   => '47.92.98.25', // 服务器地址
+    'DB_NAME'   => 'kuaishou', // 数据库名
+    'DB_USER'   => 'root', // 用户名
+    'DB_PWD'    => 'qwer1234', // 密码
+    'DB_PORT'   => 3306, // 端口*/
 
     'DB_PREFIX' => '', // 数据库表前缀
     'DB_CHARSET'=> 'utf8', // 字符集
+    'URL_MODEL'=> 1, // 开启pathinfo
 
     'LOG_RECORD' => true, // 开启日志记录
     'LOG_LEVEL'  =>'EMERG,ALERT,CRIT,ERR', // 只记录EMERG ALERT CRIT ERR 错误

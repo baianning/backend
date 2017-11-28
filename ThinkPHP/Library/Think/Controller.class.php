@@ -12,7 +12,8 @@ namespace Think;
 /**
  * ThinkPHP 控制器基类 抽象类
  */
-header("Access-Control-Allow-Origin: http://192.168.8.105:8080");
+header("Access-Control-Allow-Origin: http://192.168.8.110:8080");
+//header("Access-Control-Allow-Origin: http://kuai.cow8.cn http://192.168.8.105:8080");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Methods:GET,POST");
 abstract class Controller {

@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="UTF-8">
-    <title>欢迎页面-X-admin2.0</title>
+    <title>新闻列表</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -33,17 +33,24 @@
     </div>
     <div class="x-body">
       <div class="layui-row">
-        <form class="layui-form layui-col-md12 x-so">
-          <input class="layui-input" placeholder="开始日" name="start" id="start">
-          <input class="layui-input" placeholder="截止日" name="end" id="end">
-          <input type="text" name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">
-          <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+        <form class="layui-form layui-col-md12 x-so" action="news_list" method="post">
+          <input class="layui-input" placeholder="开始日" name="start" id="start" value="<?php echo ($param['start'] ? $param['start'] : ''); ?>">
+          <input class="layui-input" placeholder="截止日" name="end" id="end"  value="<?php echo ($param['end'] ? $param['end'] : ''); ?>" >
+          <!--<input type="text" name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">-->
+          <select class="layui-select" name="grade" lay-search>
+            <option value="">全部</option>
+            <option value="3" <?php if($param['grade'] == 3 ): ?>selected<?php endif; ?> >三级</option>
+            <option value="2" <?php if($param['grade'] == 2 ): ?>selected<?php endif; ?> >二级</option>
+            <option value="1" <?php if($param['grade'] == 1 ): ?>selected<?php endif; ?> >一级</option>
+          </select>
+          <!--<submit class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></submit>-->
+          <input type="submit" class="layui-btn"  lay-submit="" lay-filter="sreach" value="查询">
         </form>
       </div>
       <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-        <button class="layui-btn" onclick="x_admin_show('添加用户','./member-add.html',600,400)"><i class="layui-icon"></i>添加</button>
-        <span class="x-right" style="line-height:40px">共有数据：88 条</span>
+        <!--<button class="layui-btn" onclick="x_admin_show('添加用户','./member-add.html',600,400)"><i class="layui-icon"></i>添加</button>-->
+        <span class="x-right" style="line-height:40px">共有数据：<?php echo ($total); ?> 条</span>
       </xblock>
       <table class="layui-table">
         <thead>
@@ -64,7 +71,7 @@
         <tbody>
         <?php if(is_array($news_list)): $i = 0; $__LIST__ = $news_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
             <td>
-              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+              <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<?php echo ($vo["news_id"]); ?>'><i class="layui-icon">&#xe605;</i></div>
             </td>
             <td><?php echo ($vo["news_id"]); ?></td>
             <td><?php echo ($vo["title"]); ?></td>
@@ -79,13 +86,10 @@
               <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
                 <i class="layui-icon">&#xe601;</i>
               </a>
-              <a title="编辑"  onclick="x_admin_show('编辑','member-edit.html',600,400)" href="javascript:;">
+              <a title="编辑" href="news_edit?news_id=<?php echo ($vo["news_id"]); ?>">
                 <i class="layui-icon">&#xe642;</i>
               </a>
-              <a onclick="x_admin_show('修改密码','member-password.html',600,400)" title="修改密码" href="javascript:;">
-                <i class="layui-icon">&#xe631;</i>
-              </a>
-              <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+              <a title="删除" onclick="member_del(this,<?php echo ($vo["news_id"]); ?>)" href="javascript:;">
                 <i class="layui-icon">&#xe640;</i>
               </a>
             </td>
@@ -94,14 +98,7 @@
         </tbody>
       </table>
       <div class="page">
-        <div>
-          <a class="prev" href="">&lt;&lt;</a>
-          <a class="num" href="">1</a>
-          <span class="current">2</span>
-          <a class="num" href="">3</a>
-          <a class="num" href="">489</a>
-          <a class="next" href="">&gt;&gt;</a>
-        </div>
+        <?php echo ($pageary['html']); ?>
       </div>
 
     </div>
@@ -147,9 +144,21 @@
       /*用户-删除*/
       function member_del(obj,id){
           layer.confirm('确认要删除吗？',function(index){
-              //发异步删除数据
-              $(obj).parents("tr").remove();
-              layer.msg('已删除!',{icon:1,time:1000});
+              $.ajax({
+                  type: 'post',
+                  url: "<?php echo U('News/news_del');?>",
+                  data:{"ids":id},
+                  success: function(data) {
+                      data = eval("("+data+")");
+                      if(data.errno==0){
+                          //发异步删除数据
+                          $(obj).parents("tr").remove();
+                          layer.msg('已删除!',{icon:1,time:1000});
+                      }else{
+                          layer.msg('删除失败', {icon: 1});
+                      }
+                  }
+              });
           });
       }
 
@@ -157,12 +166,26 @@
 
       function delAll (argument) {
 
-        var data = tableCheck.getData();
-  
-        layer.confirm('确认要删除吗？'+data,function(index){
+        var datas = tableCheck.getData();
+        layer.confirm('确认要删除吗？'+datas,function(index){
             //捉到所有被选中的，发异步进行删除
-            layer.msg('删除成功', {icon: 1});
-            $(".layui-form-checked").not('.header').parents('tr').remove();
+//            return false;
+            $.ajax({
+                type: 'post',
+                url: "<?php echo U('News/news_del');?>",
+                data:{"news_ids":datas},
+                success: function(data) {
+                    data = eval("("+data+")");
+                    if(data.errno==0){
+                        layer.msg('删除成功', {icon: 1});
+                        $(".layui-form-checked").not('.header').parents('tr').remove();
+                    }else{
+                        layer.msg('删除失败', {icon: 1});
+                    }
+                }
+            });
+
+
         });
       }
     </script>
