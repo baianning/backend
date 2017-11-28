@@ -19662,3 +19662,206 @@ SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
 SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
 SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2017-11-28T20:51:01+08:00 ] 192.168.8.110 /index.php/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0281s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0182s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+SQL: SELECT `cate_sort` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select * from category where id in(1,11,7,4,5,8,6,3,9,10,2) order by field(id,1,11,7,4,5,8,6,3,9,10,2) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE ( grade = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `news_id`,`times`,`title`,`ctime`,`admin_id`,`source`,`cover_img`,`grade`,`profile` FROM `news` WHERE ( grade=3 ) ORDER BY times DESC,utime DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0149s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `news_id`,`title`,`ctime`,`admin_id`,`source`,`cover_img`,`grade`,`profile` FROM `news` WHERE ( grade in (1,2) ) ORDER BY utime DESC  [ RunTime:0.0004s ]
+
+[ 2017-11-28T20:51:07+08:00 ] 192.168.8.110 /index.php/News/cate_news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0159s ]
+SQL: SELECT news.news_id,news.title,news.times,news.ctime,news.admin_id,news.source,news.cover_img,news.grade,re.cate_id FROM `news` INNER JOIN relevance re on news.news_id = re.news_id  WHERE ( news.grade = 3 and re.cate_id=4 )  [ RunTime:0.0006s ]
+SQL: SELECT news.news_id,news.title,news.times,news.ctime,news.admin_id,news.source,news.cover_img,news.grade,re.cate_id FROM `news` INNER JOIN relevance re on news.news_id = re.news_id  WHERE ( news.grade = 3 and re.cate_id=4 ) LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0159s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-11-28T20:51:09+08:00 ] 192.168.8.110 /index.php/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0205s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+SQL: SELECT `cate_sort` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: select * from category where id in(1,11,7,4,5,8,6,3,9,10,2) order by field(id,1,11,7,4,5,8,6,3,9,10,2) [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE ( grade = 3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `news_id`,`times`,`title`,`ctime`,`admin_id`,`source`,`cover_img`,`grade`,`profile` FROM `news` WHERE ( grade=3 ) ORDER BY times DESC,utime DESC LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0118s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `news_id`,`title`,`ctime`,`admin_id`,`source`,`cover_img`,`grade`,`profile` FROM `news` WHERE ( grade in (1,2) ) ORDER BY utime DESC  [ RunTime:0.0004s ]
+
+[ 2017-11-28T20:51:13+08:00 ] 192.168.8.110 /index.php/News/cate_news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0242s ]
+SQL: SELECT news.news_id,news.title,news.times,news.ctime,news.admin_id,news.source,news.cover_img,news.grade,re.cate_id FROM `news` INNER JOIN relevance re on news.news_id = re.news_id  WHERE ( news.grade = 3 and re.cate_id=4 )  [ RunTime:0.0006s ]
+SQL: SELECT news.news_id,news.title,news.times,news.ctime,news.admin_id,news.source,news.cover_img,news.grade,re.cate_id FROM `news` INNER JOIN relevance re on news.news_id = re.news_id  WHERE ( news.grade = 3 and re.cate_id=4 ) LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0164s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-28T20:51:15+08:00 ] 192.168.8.110 /index.php/News/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0004s ]
+SQL: SELECT `cate_sort` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select * from category where id in(1,11,7,4,5,8,6,3,9,10,2) order by field(id,1,11,7,4,5,8,6,3,9,10,2) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE ( grade = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `news_id`,`times`,`title`,`ctime`,`admin_id`,`source`,`cover_img`,`grade`,`profile` FROM `news` WHERE ( grade=3 ) ORDER BY times DESC,utime DESC LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0119s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `news_id`,`title`,`ctime`,`admin_id`,`source`,`cover_img`,`grade`,`profile` FROM `news` WHERE ( grade in (1,2) ) ORDER BY utime DESC  [ RunTime:0.0005s ]
+
+[ 2017-11-28T20:51:17+08:00 ] 192.168.8.110 /index.php/News/cate_news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0224s ]
+SQL: SELECT news.news_id,news.title,news.times,news.ctime,news.admin_id,news.source,news.cover_img,news.grade,re.cate_id FROM `news` INNER JOIN relevance re on news.news_id = re.news_id  WHERE ( news.grade = 3 and re.cate_id=4 )  [ RunTime:0.0006s ]
+SQL: SELECT news.news_id,news.title,news.times,news.ctime,news.admin_id,news.source,news.cover_img,news.grade,re.cate_id FROM `news` INNER JOIN relevance re on news.news_id = re.news_id  WHERE ( news.grade = 3 and re.cate_id=4 ) LIMIT 0,6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0155s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-28T20:51:19+08:00 ] 192.168.8.110 /index.php/News/news_search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: select count(*) as count from news where CONCAT(news.title,news.profile) LIKE '%测试%' [ RunTime:0.0013s ]
+SQL: select news_id,times,title,ctime,admin_id,source,profile,cover_img,grade from news where CONCAT(news.title,news.profile) LIKE '%测试%' order by ctime DESC limit 0,6 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0316s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-28T20:51:22+08:00 ] 192.168.8.110 /index.php/News/new_detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0317s ]
+SQL: SELECT `news_id`,`title`,`content`,`cover_img`,`admin_id`,`source`,`ctime`,`profile` FROM `news` WHERE ( news_id=94 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `news` SET `times`=times+1 WHERE ( news_id=94 ) [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0170s ]
+SQL: SELECT `history` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `history`='29,91,11,9,90,71,93,1,41,10,2,94' WHERE ( uid =1 ) [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0147s ]
+SQL: SELECT `username` FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-28T20:51:23+08:00 ] 192.168.8.110 /index.php/News/author_detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0147s ]
+SQL: SELECT `admin_id` FROM `news` WHERE ( news_id=94 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT admin.id,admin.username,admin.head_pic,admin.email,admin.introduce,count(*) count FROM `admin` LEFT JOIN  news on news.admin_id = admin.id   WHERE ( admin.id=1 ) GROUP BY news.admin_id  [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news` WHERE ( admin_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Division by zero D:\item\Application\Home\Common\function.php 第 113 行.
+SQL: SELECT `news_id`,`times`,`title`,`ctime`,`admin_id`,`source`,`profile`,`cover_img`,`grade` FROM `news` WHERE ( admin_id=1 ) ORDER BY ctime DESC  [ RunTime:0.0021s ]
+
+[ 2017-11-28T20:51:24+08:00 ] 192.168.8.110 /index.php/News/get_comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0290s ]
+SQL: SELECT ct.id,ct.content,ct.ctime,u.uid,u.nickname,u.head_pic FROM comment ct LEFT JOIN  user u on ct.uid = u.uid   WHERE (  news_id=94  )  [ RunTime:0.0008s ]
+SQL: SELECT ct.id,ct.content,ct.ctime,u.uid,u.nickname,u.head_pic FROM comment ct LEFT JOIN  user u on ct.uid = u.uid   WHERE (  news_id=94  ) ORDER BY ct.ctime DESC LIMIT 0,6   [ RunTime:0.0006s ]
+
+[ 2017-11-28T20:51:29+08:00 ] 192.168.8.110 /index.php/News/get_comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0361s ]
+SQL: SELECT ct.id,ct.content,ct.ctime,u.uid,u.nickname,u.head_pic FROM comment ct LEFT JOIN  user u on ct.uid = u.uid   WHERE (  news_id=94  )  [ RunTime:0.0011s ]
+SQL: SELECT ct.id,ct.content,ct.ctime,u.uid,u.nickname,u.head_pic FROM comment ct LEFT JOIN  user u on ct.uid = u.uid   WHERE (  news_id=94  ) ORDER BY ct.ctime DESC LIMIT 6,6   [ RunTime:0.0006s ]
+
+[ 2017-11-28T20:52:52+08:00 ] 192.168.8.110 /index.php/News/new_detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+
