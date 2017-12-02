@@ -1,0 +1,874 @@
+[ 2017-11-30T12:04:50+08:00 ] ::1 /admin.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-11-30T12:04:53+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0458s ]
+SQL: SELECT `id`,`username`,`password`,`randnum` FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2017-11-30T12:04:54+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-11-30T12:04:55+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0351s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-11-30T12:11:15+08:00 ] ::1 /admin.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001499s ]
+
+[ 2017-11-30T12:11:18+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0265s ]
+SQL: SELECT `id`,`username`,`password`,`randnum` FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-11-30T12:11:19+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-11-30T12:11:20+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0216s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2017-11-30T12:11:24+08:00 ] ::1 /admin.php/News/news_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 10 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 13 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 16 行.
+NOTIC: [8] Undefined index: category_id D:\item\Application\Admin\Controller\NewsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0305s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC  [ RunTime:0.0088s ]
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC LIMIT 0,10   [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 37 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 38 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 42 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 43 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-11-30T12:11:28+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0303s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2017-11-30T12:11:29+08:00 ] ::1 /admin.php/Admin/admin_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-11-30T12:11:33+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2017-11-30T12:11:34+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0417s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2017-11-30T12:11:51+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0414s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2017-11-30T12:12:25+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0265s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2017-11-30T12:12:29+08:00 ] ::1 /admin.php/Admin/admin_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+
+[ 2017-11-30T12:12:32+08:00 ] ::1 /admin.php/Admin/Admin/admin_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+ERR: 非法操作:Admin
+
+[ 2017-11-30T12:12:46+08:00 ] ::1 /admin.php/Admin/admin_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-11-30T12:12:50+08:00 ] ::1 /admin.php/Admin/admin_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0306s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-11-30T14:19:56+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002495s ]
+
+[ 2017-11-30T14:19:58+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0279s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-11-30T14:20:00+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0351s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003291s ]
+
+[ 2017-11-30T14:20:06+08:00 ] ::1 /admin.php/News/news_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-11-30T14:21:35+08:00 ] ::1 /admin.php/News/news_do_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0185s ]
+SQL: INSERT INTO `news` (`title`,`profile`,`cover_img`,`content`,`source`,`grade`,`status`,`admin_id`,`ctime`,`utime`) VALUES ('1111111111','额额饿','data:image/jpeg;base64,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','&lt;p&gt;问鹅鹅鹅鹅鹅鹅饿鹅鹅鹅饿额群去去去去去去吾问无为谓无&lt;/p&gt;','额额饿','1','1','1','1512022894','1512022894') [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `relevance` [ RunTime:0.0185s ]
+SQL: INSERT INTO `relevance` (`news_id`,`cate_id`,`ctime`) VALUES ('102','3','1512022895') [ RunTime:0.0006s ]
+
+[ 2017-11-30T20:21:23+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003228s ]
+
+[ 2017-11-30T20:21:25+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2017-11-30T20:21:27+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0225s ]
+SQL: SELECT `id`,`username`,`password`,`randnum` FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-11-30T20:21:28+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-11-30T20:21:29+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004048s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0233s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2017-11-30T20:21:32+08:00 ] ::1 /admin.php/News/news_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 10 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 13 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 16 行.
+NOTIC: [8] Undefined index: category_id D:\item\Application\Admin\Controller\NewsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0213s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC  [ RunTime:0.0143s ]
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC LIMIT 0,10   [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000563s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 37 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 38 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 42 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 43 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2017-11-30T20:22:11+08:00 ] ::1 /admin.php/News/news_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-11-30T20:23:56+08:00 ] ::1 /admin.php/News/news_do_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0257s ]
+SQL: INSERT INTO `news` (`title`,`profile`,`cover_img`,`content`,`source`,`grade`,`status`,`admin_id`,`ctime`,`utime`) VALUES ('123123123','123123123','data:image/jpeg;base64,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','&lt;p&gt;按时大声道阿萨德按时&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;if(&amp;nbsp;1&amp;nbsp;=&amp;nbsp;1&amp;nbsp;)&amp;nbsp;echo&amp;nbsp;123;&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','333333','3','1','1','1512044635','1512044635') [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `relevance` [ RunTime:0.0223s ]
+SQL: INSERT INTO `relevance` (`news_id`,`cate_id`,`ctime`) VALUES ('103','1','1512044636') [ RunTime:0.0007s ]
+
+[ 2017-11-30T20:24:04+08:00 ] ::1 /admin.php/News/news_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 10 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 13 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 16 行.
+NOTIC: [8] Undefined index: category_id D:\item\Application\Admin\Controller\NewsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0177s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC  [ RunTime:0.0089s ]
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC LIMIT 0,10   [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 37 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 38 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 42 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 43 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-11-30T20:24:09+08:00 ] ::1 /admin.php/News/news_edit?news_id=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `news` WHERE ( news_id =103 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `relevance` [ RunTime:0.0242s ]
+SQL: SELECT `cate_id` FROM `relevance` WHERE ( news_id=103 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+

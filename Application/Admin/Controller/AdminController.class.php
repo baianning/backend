@@ -1,6 +1,5 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
 class AdminController extends PublicController {
     //管理员列表
     public function admin_list(){
@@ -23,9 +22,9 @@ class AdminController extends PublicController {
         }
         $admin = M("admin");
         $url = U('News/news_list') . "?start=" . $param['start']. "&end=" . $param['end']. "&grade=" . $param['grade']."&";
-        $total = $admin->where($where)->order("ctime DESC")->count();
+        $total = $admin->where($where)->order("utime DESC")->count();
         $pageary = pagination($total, $showNum, $page,$url);
-        $list = $admin->where($where)->order("ctime DESC")->limit($pageary['offset'], $showNum)->select();
+        $list = $admin->where($where)->order("utime DESC")->limit($pageary['offset'], $showNum)->select();
         $this->assign("list",$list);
         $this->assign("param",$param);
         $this->assign("pageary",$pageary);
@@ -33,10 +32,14 @@ class AdminController extends PublicController {
     }
     //添加管理员---显示页面
     public function admin_add(){
+        $admin_id = session("admin_id");
+        if( $admin_id != 1){
+            $this->error("您不是超级管理员，不能执行该操作");
+        }
         $this->display();
     }
     //添加管理员---操作页面
-    public function admin_do_add(){
+        public function admin_do_add(){
         $param = I("");
         $admin = M("admin");
         $username = $param['username'];
@@ -64,7 +67,7 @@ class AdminController extends PublicController {
     }
     //修改管理员信息 ---显示页面
     public function admin_edit(){
-        $admin_id = I("post.admin_id");
+        $admin_id = I("admin_id");
         if( $admin_id ){
             $data = M("admin")->where("id =".$admin_id)->find();
         }else{
@@ -75,7 +78,7 @@ class AdminController extends PublicController {
     }
     //修改管理员信息 ---操作页面
     public function admin_do_edit(){
-        $param = I("post.");
+        $param = I("");
         $admin = M("admin");
         $username = $param['username'];
         $id = $param['id'];
@@ -93,7 +96,6 @@ class AdminController extends PublicController {
         }
         $data = [
             "username"=>$param['username'],
-            "head_pic"=>'',
             "password"=>$password,
             "randnum"=>$randnum,
             "phone"=>$param['phone'],
@@ -102,7 +104,9 @@ class AdminController extends PublicController {
             "introduce"=>$param['introduce'],
             "utime"=>time()
         ];
-
+        if( $param['head_pic'] ){
+            $data["head_pic"] = $param['head_pic'];
+        }
         $res = M("admin")->where("id=".$param['id'])->save($data);
         if( $res > 0 || $res !== false ){
             echo renderJson("","",0);

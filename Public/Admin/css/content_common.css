@@ -1,0 +1,562 @@
+/* CSS Document */
+/*公共属性*/
+html,body,div,p,b,i,a,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dd,dt,dl,form,input,iframe,span,select,textarea,table,tr,td,th{
+	margin: 0;
+	padding: 0;
+	/*重置webkit和firefox的相应样式,使padding-left能加到最终宽度上*/
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/*html{
+	background-color: #f3f3f3;
+}*/
+html,body{ 
+		font-size: 12px;
+		/*background: #fff;*/
+		/*font-family:"微软雅黑";*/
+		font-family:  "Microsoft YaHei","weiruanyahei",Tahoma,SimSun !important;
+		color: #505050;
+		min-width: 1155px;
+}
+ul,ol{ 
+		list-style:none;
+}
+i,b{
+	font-style: normal;
+	font-weight: 100;
+}
+img{ 
+		display: block;
+		border:none;
+}
+a{ 
+	text-decoration:none;
+	outline:none;
+	color: #636363;
+}
+.r{
+	float: right!important;
+}
+
+.l{
+	float:left;
+}
+.oh{
+	overflow: hidden;
+}
+.db{
+	display: block;
+}
+.bs{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.cp{
+	cursor: pointer;
+}
+input{
+	outline:none;
+	background-color: #fff;
+}
+/*清除chrome表单自动填充的背景色*/
+input:-webkit-autofill { 
+	-webkit-box-shadow: 0 0 0px 1000px white inset; 
+	border: 1px solid #d0d0d0!important; 
+} 
+input[type=text],input[type=password]{
+	border:1px solid #d0d0d0;
+	height: 20px;
+	line-height: 20px;
+	width: 140px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 8px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+select {
+  	border:1px solid #d0d0d0;
+	height: 20px;
+	width: 140px;
+	padding-left: 10px;
+	margin-left: 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url("/Public/Admin/images/select_icon.png") no-repeat scroll right center transparent;
+	font-size: 12px;
+	outline:none;
+	background-color: #fff;
+}
+select::-ms-expand { display: none; }
+select option{
+	padding-left: 14px;
+}
+select[name=showTrNum]{
+	margin-top: 5px;
+	color: #787878;
+}
+textarea{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:1px solid #d0d0d0 ;
+	resize: none;
+	outline:none;
+}
+
+textarea{
+	border-radius: 3px;
+	border:1px solid #d0d0d0;
+	resize: none;
+	margin-left: 8px;
+	padding-left: 10px;
+}
+table td i{
+	margin-right: 5px;
+	float: left;
+	cursor: pointer;
+}
+.content_box{
+	/*padding: 7px;*/
+	margin: 10px;
+	/*min-width: 1100px;*/
+	overflow: hidden;
+}
+
+.cont_top{
+	overflow: hidden;
+	border: 1px solid #dfdfdf;
+	-webkit-border-radius:3px ;
+	-moz-border-radius:3px ;
+	border-radius: 3px;
+	padding: 14px 10px;
+	color: #414141;
+	background-color: #f5f5f5;
+	/*border-top: none;*/
+	margin-bottom:15px ;
+}
+.ctop_title{
+	overflow: hidden;
+	background-color: #f5f5f5;
+	color: #337ab7;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	border: 1px solid #dfdfdf;
+	-webkit-border-radius:3px 3px 0px 0px ;
+	-moz-border-radius:3px 3px 0px 0px;
+	border-radius:3px 3px 0px 0px;
+	padding: 0px 10px;
+	border-bottom: none;
+}
+.cont_top table{
+	width: 100%;
+	/*min-width:1100px ;*/
+	border: none;
+	border-collapse: collapse;
+}
+.cont_top table td{
+	padding: 5px 0px;
+}
+.cont_top table td label{
+	float: left;
+	height: 22px;
+	line-height: 22px;
+}
+.cont_top table td span{
+	height: 22px;
+	line-height: 22px;
+	float: left;
+/*	text-align: right;*/
+}
+.cont_top table td div.date_box{
+	overflow: hidden;
+}
+.cont_top table td input{
+	float: left;
+}
+.cont_top table td select{
+	float: left;
+}
+.btn{
+	min-width: 60px;
+	padding: 0px 5px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #337ab7;
+	color: #fff;
+	border: 1px solid #276ca8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+input.btn{
+	min-width: 60px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 18px!important;
+	display: block;
+}
+.yellow_btn{
+	min-width: 60px;
+	padding: 0px 5px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #f0ad4f;
+	color: #fff;
+	border: 1px solid #db8915;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+input.yellow_btn{
+	min-width: 60px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 18px!important;
+	display: block;
+}
+.red_btn{
+	min-width: 60px;
+	padding: 0px 5px;
+	height: 20px;
+	line-height: 10px;
+	text-align: center;
+	background-color: #d9534f;
+	color: #fff;
+	border: 1px solid #c4312c;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+input.red_btn{
+	min-width: 60px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 18px!important;
+	display: block;
+}
+.gray_btn{
+	min-width: 60px;
+	padding: 0px 5px;
+	height: 20px;
+	line-height: 10px;
+	text-align: center;
+	background-color:#B2B2B2;
+	color: #fff;
+	border: 1px solid #a9a9a9;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	
+}
+input.gray_btn{
+	min-width: 60px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 18px!important;
+	display: block;
+}
+/*<div class="kh_box">
+	<input class="khmc" type="text" />
+	<span class="search_kh"></span>
+</div>*/
+/*.cont_top*/ .kh_box{
+	height: 20px!important;
+	overflow: hidden;
+	border:1px solid #d0d0d0;
+	width: 150px;
+	margin-left: 8px;
+	float: left;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+/*.cont_top*/ .kh_box input.khmc{
+	width: 121px;
+	border: 0;
+	margin: 0;
+	float: left;
+}
+/*.cont_top*/ .kh_box .search_kh{
+	height: 20px;
+	width: 19px!important;
+	background: url(/Public/Admin/images/search_kh.png) no-repeat ;
+	cursor: pointer;
+	background-color:#fff;
+	float: left;
+	margin: 0px!important;
+}
+/*.cont_top*/ .kh_box .search_kh:hover{
+	background: url(/Public/Admin/images/search_kh1.png) no-repeat ;
+}
+.cont_bottom{
+	overflow: hidden;
+	border: 1px solid #D1D1D1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: relative;
+	
+}
+.cont_bottom .bot_up{
+	/*min-width: 1120px;*/
+	border-top: 1px solid #fff;
+	background-color: #f5f5f9;
+	overflow: hidden;
+	border-bottom: 1px solid #d1d1d1;
+}
+.cont_bottom .bot_up .icon_excel{
+	width:32px;
+	height: 30px;
+	border-right: 1px solid #d1d1d1;
+	cursor: pointer;
+	background: url(/Public/Admin/images/excel_xiao.png) no-repeat 7px 9px;
+}
+.cont_bottom .bot_up .icon_excel:hover{
+	background: url(/Public/Admin/images/tableImg/excel_xiao_s.png) no-repeat 7px 9px;
+}
+.cont_bottom .icon_show{
+	width: 83px;
+	height: 20px;
+	border: 1px solid #cfd0d2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #e5e5e5;
+	color: #47566c;
+	line-height: 20px;
+	text-align: center;
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	display: none;
+	z-index: 10;
+}
+
+/*.cont_bottom .bot_up .title{
+	height: 30px;
+	line-height: 30px;
+	border-left: 1px solid #fff;
+	text-align: center;
+	padding-left: 10px;
+	color: #636363;
+	width:95%;
+}
+.cont_bottom .bot_up .title div.r{
+	color: #337ab7;
+}
+.cont_bottom .bot_up .title div.r div.l{
+	cursor: pointer;
+	margin-left: 20px;
+}
+.cont_bottom .bot_up .title div.r div.l i{
+	margin: 5px;
+}*/
+.cont_bottom .bot_up div.l{
+	height: 30px;
+	line-height: 30px;
+}
+.cont_bottom .bot_up div.l.title{
+	margin-left: 10px;
+}
+.cont_bottom .bot_up div.r{
+	/*margin-right: 1.2%;*/
+	margin-right: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+.cont_bottom .bot_down{
+	margin-top: 10px;
+	/*margin-left: 1.2%;
+	margin-right: 1.2%;*/
+	margin-left: 15px;
+	margin-right: 15px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	/*position: relative;*/
+	/*width: 97.6%;*/
+	border-left: 1px solid #d1d1d1;
+	border-right: 1px solid #d1d1d1;
+}
+.cont_bottom .bot_down table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	
+}
+.cont_bottom .bot_down table td{
+	height: 34px;
+}
+.cont_bottom .bot_down table tr td div{
+	height: 34px;
+	line-height: 34px;
+}
+/*last_td first_td的鼠标 开始*/
+.cont_bottom .bot_down table tr .last_td div{
+	cursor: default;
+}
+.cont_bottom .bot_down table tr .first_td div{
+	cursor: default;
+}
+/*last_td first_td的鼠标 结束*/
+.cont_bottom .bot_down table thead{
+	color: #8c8c8c;
+}
+.cont_bottom .bot_down table thead tr{
+	border-bottom: 2px solid #d1d1d1;
+	border-top: 1px solid #d1d1d1;
+}
+.cont_bottom .bot_down table td{
+	/*border: 1px solid #d1d1d1;*/
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
+}
+.cont_bottom .bot_down table tr td:first-child{
+	border-left:none ;
+}
+/*.cont_bottom .bot_down table tr td:last-child{
+	border-right:none ;
+}*/
+
+.cont_bottom .bot_down table tbody tr:hover{
+	background-color: #e7e7e7;
+}
+
+.cont_bottom .bot_down .tdtxt{
+	padding: 0px 5px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #cfd0d2;
+	-webkit-box-shadow: -1px -1px 2px;
+	-moz-box-shadow: -1px -1px 2px;
+	box-shadow: -1px -1px 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	position: absolute;
+	right: 5px;
+	display: none;
+	z-index: 5;
+}
+.cont_bottom .tableBottomDiv{
+	height: 23px;
+	line-height: 23px;
+    padding: 10px 0;
+}
+.cont_bottom .tableBottomDiv ul li{
+	float: left;
+	margin-left: 20px;
+}
+.cont_bottom .tableBottomDiv ul li span{
+	margin-right: 4px;
+	color: #fa4959;
+}
+
+.pag_box{
+	/*width: 100%;*/
+	height: 23px;
+	padding: 10px 0;
+	/*min-width: 1100px;*/
+	
+}
+.pag_box .pag{
+	height: 20px;
+	float: right;
+	margin-right: 15px;
+}
+.pag_box .pag .pag_btn{
+	width: 15px;
+	height: 100%;
+	float: left;
+}
+.pag_box .pag .pag_btn img{
+	margin-top: 5px;
+}
+.pag_box .pag .pag_num{
+	height: 20px;
+	line-height: 20px;
+	float:left;
+	margin-left: 5px;
+	
+}
+.pag_box .pag .pag_num input{
+	width: 42px;
+	height: 18px;
+	margin: 0 10px;
+	text-align: center;
+	padding: 0;
+}
+
+/*日期小图片*/
+.starTime,.endTime,.Time{
+	background: url(/Public/Admin/images/date.png) no-repeat right center;
+	background-color: #fff;
+}
+span.until{
+	margin-left: 8px;
+}
+/*添加删除图片按钮*/
+.left_title{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	text-align: center;
+	border-right: 1px solid #d1d1d1 ;
+}
+.add_del div img{
+	margin-left: 20px;
+	cursor: pointer;
+}
+/*表格下的图片转化为行内块*/
+table img{
+	display: inline-block;
+}
+
+.shou{
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+/*所有表格下的checkbox选中后的背景色开始*/
+.trCheckboxChexk{
+	background-color: #e2e2e2!important;
+}
+/*所有表格下的checkbox选中后的背景色结束*/
+
+/*所有的date-title属性的设置*/
+.layui-layer-content{
+	padding: 1px 3px!important;
+}
+.layui-layer-content {
+	background-color: #e5e5e5!important;
+}
+.layui-layer-TipsG{
+	border-right-color:#e5e5e5!important ;
+}
+.layui-layer-tips i.layui-layer-TipsB{
+	display: none!important;
+}
+
+
+/*所有的date-title属性的设置结束*/

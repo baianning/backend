@@ -33,7 +33,7 @@ class LoginController extends Controller
     //登录操作
     public function Login()
     {  // 判断提交方式
-//        if(!IS_POST) echo renderJson("","参数错误",3);
+        if(!IS_POST) echo renderJson("","参数错误",3);
         $phone = I("post.phone");
         $Vcode = I("post.Vcode");
 
@@ -44,10 +44,10 @@ class LoginController extends Controller
         $resvcode = M("vcode")->where("vcode=".$Vcode." and phone=".$phone)->find();
         if( !$resvcode ) echo renderJson("","验证码有误",1);//判断验证码是否正确
         if( ( time() - $resvcode['ctime'] ) >3000000 ) echo renderJson("","验证码已过期",3);//判断验证码是否正确
-//        echo 123;die;
 
         $user = M("user");
         $res = $user->where("phone='".$phone."'")->find();
+        addLogs($res,'phone');
         if( !$res ){
             $data = [
                 "phone"=>$phone,
@@ -55,9 +55,12 @@ class LoginController extends Controller
                 "utime"=>time()
             ];
             $newid =$user->add($data);
+            addLogs($newid,'newid');
             if( $newid ){
+                session(null);
                 session("uid",$newid);
                 session("phone",$phone);
+                addLogs(session(),'aaa');
                 $datas = [
                     "first_time"=>1,
                     "uid"=>$newid,
@@ -91,6 +94,7 @@ class LoginController extends Controller
     public function perfect_datum(){
         if(!IS_POST) echo renderJson("","参数错误",3);
         $user = M('user');
+//        session("uid",1);
         $uid = session("uid");
         addLogs(session());
         if( !$uid ) echo renderJson("","请先登录",2);

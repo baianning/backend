@@ -18,6 +18,12 @@
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .user-head-img{
+            width: 120px;
+            margin-left:100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,9 +56,10 @@
             <label for="head_pic" class="layui-form-label">
                 <span class="x-red">*</span>头像
             </label>
-            <div class="layui-input-inline">
-                <input type="file" id="head_pic" name="head_pic" class="layui-input">
+            <div class="layui-input-inline" id="upBtn">
+                <input type="file" id="head_pic" name="head_pic" class="upfile head_input">
             </div>
+            <img src="<?php echo ($data["head_pic"]); ?>" alt="" class="user-head-img">
         </div>
 
         <div class="layui-form-item">
@@ -60,8 +67,7 @@
                 <span class="x-red">*</span>简介
             </label>
             <div class="layui-input-inline">
-                    <textarea rows="3" cols="20" id="introduce" name="introduce" class="layui-textarea">
-                        <?php echo ($data["introduce"]); ?>
+                    <textarea rows="3" cols="20" id="introduce" name="introduce" class="layui-textarea"><?php echo ($data["introduce"]); ?>
                     </textarea>
                 <!--<input type="text" id="introduce" name="introduce" class="layui-input">-->
             </div>
@@ -118,6 +124,32 @@
 </div>
 <script>
 
+    $(function(){
+        $(".head_input").on("change", function(){
+            var fil = $(this).prop('files');
+            for (var i = 0; i < fil.length; i++) {
+                reads(fil[i]);
+            }
+            function reads(fil) {
+                var reader = new FileReader();
+                reader.readAsDataURL(fil);
+                if (!/image\/\w+/.test(fil.type)) {
+                    alert('上传的不是图片');
+                    return false;
+                }
+                if(fil.size > 2 * 1024 * 1024){
+                    alert("上传的头像不能超过2M");
+                }
+                else {
+                    reader.onload = function() {
+                        $('.user-head-img')
+                            .prop("src", reader.result)
+                    };
+                }
+            }
+        })
+    })
+
     layui.use(['form','layer'], function(){
         $ = layui.jquery;
         var form = layui.form
@@ -140,21 +172,32 @@
         //监听提交
         form.on('submit(add)', function(data){
             //发异步，把数据提交给php
+            var id = $.trim( $("input[name='id']").val() );
+            var username = $.trim( $("input[name='username']").val() );
+            var phone = $.trim( $("input[name='phone']").val() );
+            var grade = $.trim( $("input[name='grade']:checked").val() );
+            var introduce = $.trim( $("textarea[name='introduce']").val() );
+            var email = $.trim( $("input[name='email']").val() );
+            var password = $.trim( $("input[name='password']").val() );
+            var repass = $.trim( $("input[name='repass']").val() );
+            var head_pic = $(".user-head-img").attr("src");
+
             $.ajax({
                 type: 'post',
                 url: "<?php echo U('Admin/admin_do_edit');?>",
-                data: $("form").serialize(),
+                data:{"id":id,"username":username,"phone":phone,"grade":grade,"introduce":introduce,"email":email,"password":password,"repass":repass,"head_pic":head_pic},
+                dataType : "json",
                 success: function(data) {
-                    data = eval("("+data+")");
                     if(data.errno==0){
                         layer.alert("修改成功", {icon: 6},function () {
                             // 获得frame索引
                             var index = parent.layer.getFrameIndex(window.name);
                             //关闭当前frame
                             parent.layer.close(index);
+                            window.location.href="admin_list";
                         });
                     }else{
-                        layer.alert("修改失败", {icon: 6});
+                        layer.alert(data.errmeg, {icon: 6});
                     }
                 }
             });

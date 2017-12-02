@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" ><![endif]-->
+		<title>页面出错</title>
+		<link rel="stylesheet" href="__ADMINCSS__/content_common.css" />
+		<link rel="stylesheet" href="__ADMINCSS__/err_html.css" />
+	</head>
+		<script type="text/javascript" src="__ADMINJS__/jquery-1.11.3.js"></script>
+	<body>
+		<div class="err">
+			<div class="top oh">
+				<div class="l errImg">
+					<img src="__ADMINIMAGE__/err/err404_1.png"/>
+				</div>
+				<div class="l cutOff"></div>
+				<div class="l content">
+					<ul class="oh">
+						<li class="liTitle">
+							<i class="l">
+								<img src="__ADMINIMAGE__/err/robot.png" />
+							</i>
+							<span class="l">Sorry~你查找的页面不存在...</span>
+						</li>
+						<li>您可以：</li>
+						<li>
+							<i class="l round"><img src="__ADMINIMAGE__/err/round.png"/></i>
+							<span class="l">检查页面访问的网址是否正确</span>
+						</li>
+						<li>
+							<i class="l round"><img src="__ADMINIMAGE__/err/round.png"/></i>
+							<span class="l">尝试联系24小时客服4006568777转812</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="aBox">
+					<a class="l index" target="myframe" href="javascript:" onclick="returnIndex()">返回系统首页</a>
+					<a class="l" href="javascript:;" onclick="returnBack()">返回上一页</a>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript">
+		function gainFrameId(){
+			if(window.frameElement.id=='iframe2'&&$('.tanchuye',parent.document).css('display')=='block'){
+				$('.tanchuye',parent.document).css('display','none');
+				$('#iframe2',parent.document).attr('src','');
+				$('#iframe2',parent.document).css('display','none');
+			}else if(window.frameElement.id=='iframe3'&&$('.bg_tier3',parent.document).css('display')=='block'){
+				$('.bg_tier3',parent.document).css('display','none');
+				$('#iframe3',parent.document).attr('src','');
+				$('#iframe3',parent.document).css('display','none');
+			}else if(window.frameElement.id=='iframe4'&&$('.bg_tier4',parent.document).css('display')=='block'){
+				$('.bg_tier4',parent.document).css('display','none');
+				$('#iframe4',parent.document).attr('src','');
+				$('#iframe4',parent.document).css('display','none');
+			};
+		};
+		//返回首页
+		function returnIndex(){
+			$('#iframe1',parent.document).attr("src","{:U('Index/index_html')}");
+			gainFrameId();
+		};
+		//返回上一页
+		function returnBack(){
+			history.go(-1);
+			gainFrameId();
+		};
+	</script>
+	</body>
+</html>

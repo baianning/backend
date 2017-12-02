@@ -80,7 +80,8 @@ function addLogs($param,$file_name='logs'){
     if( is_array($param) ){
         $param = var_export($param,true);
     }
-    file_put_contents("/item/Logs/".$file_name.".txt",$param,PHP_EOL,FILE_APPEND);
+    $url = "/item/Logs/".$file_name.".txt";
+    file_put_contents($url,$param);
 }
 function get_cate($field='',$sort = 0){
     $cate = M("category");

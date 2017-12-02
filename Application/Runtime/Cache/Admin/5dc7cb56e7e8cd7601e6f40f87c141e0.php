@@ -60,7 +60,8 @@
             </th>
             <th>ID</th>
             <th>标题</th>
-            <th>简介</th>
+            <!--<th>简介</th>-->
+            <th>类型</th>
             <th>访问量</th>
             <th>来源</th>
             <th>所属人</th>
@@ -75,7 +76,8 @@
             </td>
             <td><?php echo ($vo["news_id"]); ?></td>
             <td><?php echo ($vo["title"]); ?></td>
-            <td><?php echo ($vo["profile"]); ?></td>
+            <td><?php echo ($vo["cate_id"]); ?></td>
+            <!--<td><?php echo ($vo["profile"]); ?></td>-->
             <td><?php echo ($vo["times"]); ?></td>
             <td><?php echo ($vo["source"]); ?></td>
             <td><?php echo ($vo["username"]); ?></td>

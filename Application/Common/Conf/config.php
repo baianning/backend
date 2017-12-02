@@ -9,17 +9,17 @@ return array(
 
     'DB_TYPE'   => 'mysql',// 数据库类型
 //本地数据库配置
-//    'DB_HOST'   => 'localhost', // 服务器地址
-//    'DB_NAME'   => 'item', // 数据库名
-//    'DB_USER'   => 'root', // 用户名
-//    'DB_PWD'    => 'root', // 密码
-//    'DB_PORT'   => 3306, // 端口
+    'DB_HOST'   => 'localhost', // 服务器地址
+    'DB_NAME'   => 'item', // 数据库名
+    'DB_USER'   => 'root', // 用户名
+    'DB_PWD'    => 'root', // 密码
+    'DB_PORT'   => 3306, // 端口
 //服务器数据库配置
-///*    'DB_HOST'   => '47.92.98.25', // 服务器地址
-//    'DB_NAME'   => 'kuaishou', // 数据库名
-//    'DB_USER'   => 'root', // 用户名
-//    'DB_PWD'    => 'qwer1234', // 密码
-//    'DB_PORT'   => 3306, // 端口*/
+/*    'DB_HOST'   => '47.92.98.25', // 服务器地址
+    'DB_NAME'   => 'kuaishou', // 数据库名
+    'DB_USER'   => 'root', // 用户名
+    'DB_PWD'    => 'qwer1234', // 密码
+    'DB_PORT'   => 3306, // 端口*/
 
     'DB_PREFIX' => '', // 数据库表前缀
     'DB_CHARSET'=> 'utf8', // 字符集

@@ -1,0 +1,890 @@
+[ 2017-11-29T19:28:52+08:00 ] ::1 /admin.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2017-11-29T19:28:53+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2017-11-29T19:28:56+08:00 ] ::1 /admin.php/News/news_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001958s ]
+
+[ 2017-11-29T19:30:35+08:00 ] ::1 /admin.php/News/news_do_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0412s ]
+SQL: INSERT INTO `news` (`title`,`profile`,`cover_img`,`content`,`source`,`grade`,`status`,`admin_id`,`ctime`,`utime`) VALUES ('揭秘大佬生活怪癖：库克每天3点45起床，扎克伯格只爱这一款T恤','我们都好奇那些全球顶级大佬的日常生活都是怎样的，是时间都被工作占据？还是经常在私人岛屿上享受悠闲假期？在这类问题上，不同大佬的生活状态还真不一样。','data:image/jpeg;base64,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','&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;我们都好奇那些全球顶级大佬的日常生活都是怎样的，是时间都被工作占据？还是经常在私人岛屿上享受悠闲假期？在这类问题上，不同大佬的生活状态还真不一样。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; font-weight: 700;&quot;&gt;生物钟奇特的库克&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;掌管着一家全球最受瞩目的科技公司，库克的生活可轻松不到哪里，而且他对自己的作息时间有严格的管理，真不是一般人能达到的。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://192.168.8.109/Public/ueditor/php/upload/image/20171129/1511954969259481.jpg&quot; title=&quot;1511954969259481.jpg&quot; alt=&quot;2.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;每天3:45，当正常人还在休息时，库克就从床上爬起来了，然后就开始处理新收到的邮件。据说库克每天能收到700-800份电子邮件，虽然数量很多，但他还是选择由自己亲自回复，也似乎并未对此表现出厌烦。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;到5点的时候，库克就准时去健身房锻炼，这时候他会把工作和健身分得很开，而健身也是他保持了多年的好习惯。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;接下来，他会和员工一块儿在公司餐厅吃早餐。至于吃什么，此前《纽约时报》的一次库克专访中透露称，他一般吃炒蛋白、无糖麦片、无糖杏仁牛奶和火鸡培根等较健康的食品。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;一天下来，库克总是最晚离开办公室的那一批人，而关于他下班后的私生活我们也不太清楚。不过据说库克每天都要保证7小时的睡眠，如果真是这样的话他就需要在8：45休息，那么库克在工作日可能就没什么时间享受个人生活了。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; font-weight: 700;&quot;&gt;慷慨又懒惰的扎克伯格&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;扎克伯格绝对是全球最年轻的富豪之一，出生于1984年的他现在才33岁，就已经坐拥大笔财富，根据今年7月份的《福布斯》实时全球富豪排行榜的数据，扎克伯格个人财富估计为727亿美元，排在全球第五的位置。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://192.168.8.109/Public/ueditor/php/upload/image/20171129/1511954996934219.jpg&quot; title=&quot;1511954996934219.jpg&quot; alt=&quot;3.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;但是扎克伯格对财富和奢华的生活并不怎么看中，之前为了庆祝大女儿出世，扎克伯格捐献出自己在Facebook的99%股份，约合450亿美元左右，以并女儿的名义建立一个慈善机构。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;钱都做了慈善，那自己的生活怎么办？事实是扎克伯格对吃穿用度不怎么讲究，他的衣柜里都是一模一样的黑灰色T恤，所以不要以为他总洗洗换换穿同一件衣服，人家小扎可就是喜欢同款呢！&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;小扎说，在选择衣服上懒散，是为了把更多的精力放在工作上，这样的理由也是让人大跌眼镜！&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; font-weight: 700;&quot;&gt;堪称“老古董”的巴菲特&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;巴菲特被封为“股神”已经很多年了，现年87岁的他正示范着富豪的另类生活。今年HBO推出了一部《成为沃伦·巴菲特》的纪录片，巴菲特亲自参与，我们从这部记录片中就可以窥见他是如何生活的。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://192.168.8.109/Public/ueditor/php/upload/image/20171129/1511955015103577.jpg&quot; title=&quot;1511955015103577.jpg&quot; alt=&quot;4.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;他给人的第一大感觉就是简朴，早餐费不超过3.17美元，麦当劳是他的最爱。他对早餐钱的精打细算到了令人发指的程度，每天早上刮胡子时就算好了早饭的花销，并让妻子提前放在一个小杯子里，而如果今天股市下跌，他就会花上2.95美元去买早餐，而不去花3.17美元。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;巴菲特每天生活的必备项目就是读书，这个习惯从很小的养成了，现在尽管年纪大了，他每天依然会花5、6个小时在读书上。他觉得读每个人都能读的书，并从中赚钱，让他有一种赢了的感觉。&lt;/p&gt;&lt;p style=&quot;-webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 16px 0px; padding: 0px; color: rgb(34, 34, 34); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;WenQuanYi Micro Hei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;现在巴菲特仍旧住在他1958年买的那套老房子里，当时这套房子只花了3.15万美元，而他已经住了半个多世纪！&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','今日头条','3','1','1','1511955034','1511955034') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `relevance` [ RunTime:0.0174s ]
+SQL: INSERT INTO `relevance` (`news_id`,`cate_id`,`ctime`) VALUES ('101','7','1511955035') [ RunTime:0.0006s ]
+
+[ 2017-11-29T19:47:45+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0280s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2017-11-29T19:47:47+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index: id D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 33 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 40 行.
+NOTIC: [8] Undefined index: phone D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 52 行.
+NOTIC: [8] Undefined index: introduce D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 70 行.
+NOTIC: [8] Undefined index: email D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 82 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 91 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 92 行.
+NOTIC: [8] Undefined index: password D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 101 行.
+NOTIC: [8] Undefined index: password D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2017-11-29T19:55:48+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+
+[ 2017-11-29T19:56:01+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-11-29T19:57:06+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0524s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2017-11-29T19:57:52+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: id D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 33 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 40 行.
+NOTIC: [8] Undefined index: phone D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 52 行.
+NOTIC: [8] Undefined index: introduce D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 70 行.
+NOTIC: [8] Undefined index: email D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 82 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 91 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 92 行.
+NOTIC: [8] Undefined index: password D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 101 行.
+NOTIC: [8] Undefined index: password D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-11-29T19:57:59+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0394s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-11-29T19:58:01+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index: id D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 33 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 40 行.
+NOTIC: [8] Undefined index: phone D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 52 行.
+NOTIC: [8] Undefined index: introduce D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 70 行.
+NOTIC: [8] Undefined index: email D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 82 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 91 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 92 行.
+NOTIC: [8] Undefined index: password D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 101 行.
+NOTIC: [8] Undefined index: password D:\item\Application\Runtime\Cache\Admin\4862fe8e40a0d7ed93f8a0a6f1e481d1.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2017-11-29T19:58:11+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005829s ]
+
+[ 2017-11-29T19:59:24+08:00 ] ::1 /admin.php/Admin/admin_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+
+[ 2017-11-29T19:59:32+08:00 ] ::1 /admin.php/News/news_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 10 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 13 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 16 行.
+NOTIC: [8] Undefined index: category_id D:\item\Application\Admin\Controller\NewsController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0365s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\NewsController.class.php 第 25 行.
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC  [ RunTime:0.0115s ]
+SQL: SELECT news.news_id,news.title,news.profile,news.source,news.times,news.status,admin.username,news.ctime,re.cate_id FROM `news` LEFT JOIN relevance re on news.news_id = re.news_id LEFT JOIN admin on news.admin_id = admin.id  WHERE ( 1=1 and news.is_del = 0 ) ORDER BY news.utime DESC LIMIT 0,10   [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+NOTIC: [8] Undefined index:  D:\item\Application\Admin\Controller\NewsController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 37 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 38 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 42 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 43 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\5dc7cb56e7e8cd7601e6f40f87c141e0.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2017-11-29T19:59:34+08:00 ] ::1 /admin.php/News/news_edit?news_id=101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0448s ]
+SQL: SELECT * FROM `news` WHERE ( news_id =101 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `relevance` [ RunTime:0.0157s ]
+SQL: SELECT `cate_id` FROM `relevance` WHERE ( news_id=101 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2017-11-29T20:01:08+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-11-29T20:01:09+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+
+[ 2017-11-29T20:01:18+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `admin` WHERE ( id =10 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-11-29T20:02:43+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `admin` WHERE ( id =10 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2017-11-29T20:03:41+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `admin` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2017-11-29T20:03:41+08:00 ] ::1 /admin.php/Admin/Admin/Uploads/2017-11-22/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2017-11-29T20:03:42+08:00 ] ::1 /admin.php/Admin/Admin/Uploads/2017-11-22/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-11-29T20:03:52+08:00 ] ::1 /admin.php/Admin/admin_do_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `admin` WHERE ( username='admin' and id <> 1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `admin` SET `username`='admin',`head_pic`='',`password`='a0c060114af6ce70d5b367d03ed41cc6',`randnum`='KY@^~/',`phone`='13522807353',`email`='13522807353@163.com',`grade`='1',`introduce`='11111',`utime`='1511957032' WHERE ( id=1 ) [ RunTime:0.0007s ]
+
+[ 2017-11-29T20:05:39+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0169s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2017-11-29T20:05:42+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0413s ]
+SQL: SELECT * FROM `admin` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-11-29T20:05:51+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `admin` WHERE ( id =10 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2017-11-29T20:05:57+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `admin` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-11-29T20:06:06+08:00 ] ::1 /admin.php/Admin/admin_do_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `admin` WHERE ( username='admin' and id <> 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `admin` SET `username`='admin',`head_pic`='',`password`='a0c060114af6ce70d5b367d03ed41cc6',`randnum`='KY@^~/',`phone`='13522807353',`email`='13522807353@163.com',`grade`='1',`introduce`='11111',`utime`='1511957166' WHERE ( id=1 ) [ RunTime:0.0004s ]
+
+[ 2017-11-29T20:06:09+08:00 ] ::1 /admin.php/Admin/admin_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0179s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-11-29T20:06:12+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0406s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2017-11-29T20:06:15+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0436s ]
+SQL: SELECT * FROM `admin` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-11-29T20:07:36+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0515s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-11-29T20:07:39+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `admin` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-11-29T20:07:45+08:00 ] ::1 /admin.php/Admin/admin_do_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `admin` WHERE ( username='admin' and id <> 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `admin` SET `username`='admin',`password`='a0c060114af6ce70d5b367d03ed41cc6',`randnum`='KY@^~/',`phone`='13522807353',`email`='13522807353@163.com',`grade`='1',`introduce`='11111',`utime`='1511957265',`head_pic`='data:image/jpeg;base64,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' WHERE ( id=1 ) [ RunTime:0.0024s ]
+
+[ 2017-11-29T20:07:48+08:00 ] ::1 /admin.php/Admin/admin_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0324s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-11-29T20:07:50+08:00 ] ::1 /admin.php/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 10 行.
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 12 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 15 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Admin\Controller\AdminController.class.php 第 18 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0345s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Admin\Controller\AdminController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `admin` WHERE ( 1=1 and is_del = 0 ) ORDER BY utime DESC LIMIT 0,10   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index: start D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 38 行.
+NOTIC: [8] Undefined index: end D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 39 行.
+NOTIC: [8] Undefined index: username D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 40 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 44 行.
+NOTIC: [8] Undefined index: grade D:\item\Application\Runtime\Cache\Admin\3226f918dacc74d0e61fbe12999479d2.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2017-11-29T20:07:52+08:00 ] ::1 /admin.php/Admin/admin_edit?admin_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `admin` WHERE ( id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+

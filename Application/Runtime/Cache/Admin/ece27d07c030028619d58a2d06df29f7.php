@@ -45,12 +45,21 @@
           </div>
             <div class="layui-form-item">
                 <label for="cover_img" class="layui-form-label">
-                    <span class="x-red">*</span>头像
+                    <span class="x-red">*</span>封面图
                 </label>
                 <div class="layui-input-inline" id="upBtn">
                     <input type="file" id="cover_img" name="cover_img" class="upfile head_input">
                 </div>
                 <img src="" alt="" class="user-head-img">
+            </div>
+            <div class="layui-form-item">
+                <label for="profile" class="layui-form-label">
+                    <span class="x-red">*</span>简介
+                </label>
+                <div class="layui-input-inline">
+                    <input type="profile" id="profile" name="profile" required="" lay-verify="profile"
+                           autocomplete="off" class="layui-input">
+                </div>
             </div>
           <div class="layui-form-item">
               <label class="layui-form-label">
@@ -62,15 +71,7 @@
                   autocomplete="off" class="layui-input">-->
               </div>
           </div>
-          <div class="layui-form-item">
-              <label for="profile" class="layui-form-label">
-                  <span class="x-red">*</span>简介
-              </label>
-              <div class="layui-input-inline">
-                  <input type="profile" id="profile" name="profile" required="" lay-verify="profile"
-                  autocomplete="off" class="layui-input">
-              </div>
-          </div>
+
           <div class="layui-form-item">
               <label for="source" class="layui-form-label">
                   <span class="x-red">*</span>来源
@@ -86,6 +87,14 @@
                     <input type="radio" name="grade" lay-skin="primary" title="三级" value="3" checked>
                     <input type="radio" name="grade" lay-skin="primary" title="二级" value="2">
                     <input type="radio" name="grade" lay-skin="primary" title="一级" value="1">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"><span class="x-red">*</span>文章分类</label>
+                <div class="layui-input-block">
+                    <select name="category_id" lay-verify="required">
+                        <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["category"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
                 </div>
             </div>
             <div class="layui-form-item">
@@ -139,6 +148,7 @@
             var title = $("input[name='title']").val();
             var profile = $("input[name='profile']").val();
             var grade = $("input[name='grade']:checked").val();
+            var category_id = $("select[name='category_id']").val();
             var content = UE.getEditor('editor').getContent();
             var source = $("input[name='source']").val();
             var status = $("input[name='status']").val();
@@ -148,12 +158,12 @@
             $.ajax({
                 type: 'post',
                 url: "<?php echo U('News/news_do_add');?>",
-                data:{"title":title,"profile":profile,"content":content,"grade":grade,"source":source,"status":status,"cover_img":cover_img},
+                data:{"title":title,"profile":profile,"content":content,"grade":grade,"source":source,"category_id":category_id,"status":status,"cover_img":cover_img},
                 success: function(data) {
                     data = eval("("+data+")");
                     if(data.errno==0){
                         alert("操作成功");
-                        window.location.href="news_list";
+                        window.location.Reload();
                     }else{
                         alert(data.errmeg);
                     }
